@@ -1,6 +1,28 @@
 Terminais sem uso na gramática
 
     ATRIBUICAO
+    LABEL
+    TYPE
+    ARRAY
+    OF
+    PROCEDURE
+    FUNCTION
+    GOTO
+    IF
+    THEN
+    ELSE
+    WHILE
+    DO
+    OR
+    DIV
+    AND
+    NOT
+    VEZES
+    MENOR
+    MAIOR
+    MAIOR_IGUAL
+    MENOR_IGUAL
+    DIFERENTE
 
 
 Gramática
@@ -60,58 +82,80 @@ Terminais, com as regras onde eles aparecem
     VAR (267) 7
     IDENT (268) 2 14 15 16 17 18
     ATRIBUICAO (269)
+    LABEL (270)
+    TYPE (271)
+    ARRAY (272)
+    OF (273)
+    PROCEDURE (274)
+    FUNCTION (275)
+    GOTO (276)
+    IF (277)
+    THEN (278)
+    ELSE (279)
+    WHILE (280)
+    DO (281)
+    OR (282)
+    DIV (283)
+    AND (284)
+    NOT (285)
+    VEZES (286)
+    MENOR (287)
+    MAIOR (288)
+    MAIOR_IGUAL (289)
+    MENOR_IGUAL (290)
+    DIFERENTE (291)
 
 
 Não terminais com as regras onde eles aparecem
 
-    $accept (15)
+    $accept (37)
         à esquerda: 0
-    programa (16)
+    programa (38)
         à esquerda: 2
         à direita: 0
-    $@1 (17)
+    $@1 (39)
         à esquerda: 1
         à direita: 2
-    bloco (18)
+    bloco (40)
         à esquerda: 4
         à direita: 2
-    $@2 (19)
+    $@2 (41)
         à esquerda: 3
         à direita: 4
-    parte_declara_vars (20)
+    parte_declara_vars (42)
         à esquerda: 5
         à direita: 4
-    var (21)
+    var (43)
         à esquerda: 7 8
         à direita: 5
-    $@3 (22)
+    $@3 (44)
         à esquerda: 6
         à direita: 7
-    declara_vars (23)
+    declara_vars (45)
         à esquerda: 9 10
         à direita: 7 9
-    declara_var (24)
+    declara_var (46)
         à esquerda: 13
         à direita: 9 10
-    $@4 (25)
+    $@4 (47)
         à esquerda: 11
         à direita: 13
-    $@5 (26)
+    $@5 (48)
         à esquerda: 12
         à direita: 13
-    tipo (27)
+    tipo (49)
         à esquerda: 14
         à direita: 13
-    lista_id_var (28)
+    lista_id_var (50)
         à esquerda: 15 16
         à direita: 13 15
-    lista_idents (29)
+    lista_idents (51)
         à esquerda: 17 18
         à direita: 2 17
-    comando_composto (30)
+    comando_composto (52)
         à esquerda: 19
         à direita: 4
-    comandos (31)
+    comandos (53)
         à esquerda: 20
         à direita: 19
 
